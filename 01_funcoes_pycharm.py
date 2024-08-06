@@ -68,7 +68,7 @@ quadrado que recebe um número e o eleva ao quadrado.
 No momento, a função está errada. Corrija
 '''
 def quadrado(a):
-    resposta = a
+    resposta = a**2
     return resposta
 '''
 12. Clique 'run python file in console' de novo. Você tem que fazer
@@ -115,7 +115,7 @@ e devolva a soma dos seus quadrados.
 '''
 
 def soma_dos_quadrados(a,b):
-    return 12
+    return quadrado(a)+quadrado(b)
 
 '''
 19. Faça o run module de novo e teste a sua função lá

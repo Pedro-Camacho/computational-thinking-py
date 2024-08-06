@@ -5,16 +5,21 @@ soma de todos eles. NÃO utilize a função sum do python. Implemente a
 lógica você mesmo!
 '''
 def soma(lista):
-    return 0
+    somatoria = 0
+    for i in range(len(lista)):
+        somatoria += lista[i]
+    return somatoria
 
 #faça uma função que recebe uma lista de números e retorna a média.
 #ou seja, soma todos os números e divide pela quantidade de numeros
 def media(lista):
-    return 12
+    return soma(lista)/len(lista)
 
 #faça uma função que acrescenta o proximo numero a uma lista.
 #por exemplo cresce([7,8]) deve devolver [7,8,9]
 def cresce(lista):
+    ultimo = lista[-1]
+    lista.append(ultimo+1)
     return lista
 
 '''
@@ -42,8 +47,16 @@ e as figuras,  'Jc', 'Qc', 'Kc'.
 Dica: para juntar duas strings, faça nova='a'+'b'
 Dica: para transformar um numero n em string, faça str(n)
 '''
+'''[ao,2o,3o,4o,5o,6o,7o,8o,9,jo,qo,ko]'''
+cartas=['A','2','3','4','5','6','7','8','9','10','J','Q','K']
 def cria_naipe(naipe):
-    pass #implemente aqui a funcao
+    carta_naipe=[]
+    for carta in cartas:
+        carta+naipe
+        carta_naipe.append(carta)
+
+
+    return carta_naipe
 
 #faça uma função que cria um baralho completo, com todas as 52 cartas
 #ela nao recebe nada e retorna uma lista.
